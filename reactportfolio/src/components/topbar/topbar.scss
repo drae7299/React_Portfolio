@@ -12,6 +12,20 @@
     .wrapper{
         padding: 10px 30px;
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left{
+
+
+            .logo{
+                font-size: 45px;
+                font-weight: 800;
+                text-decoration: none;
+                color: inherit;
+
+            }
+        }
     }
 
 }
