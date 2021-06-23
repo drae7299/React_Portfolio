@@ -9,7 +9,7 @@ import {useState} from "react"
 
 function App() {
 
-  const [menuOpen, setMenuOpen] = useState(true)
+  const [menuOpen, setMenuOpen] = useState(false)
 
   return (
     <div className="app">
