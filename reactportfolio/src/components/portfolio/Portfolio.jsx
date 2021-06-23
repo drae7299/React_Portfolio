@@ -47,23 +47,23 @@ export default function Portfolio() {
         </div>
         <div className="item">
           <img src="assets/logo_used_50.png" alt="" />
-          <h3>CloutMediaApp</h3>
+          <h3>Fitness Tracker</h3>
         </div>
         <div className="item">
           <img src="assets/logo_used_50.png" alt="" />
-          <h3>CloutMediaApp</h3>
+          <h3>Budget Tracker</h3>
         </div>
         <div className="item">
           <img src="assets/logo_used_50.png" alt="" />
-          <h3>CloutMediaApp</h3>
+          <h3>Tune Tips</h3>
         </div>
         <div className="item">
           <img src="assets/logo_used_50.png" alt="" />
-          <h3>CloutMediaApp</h3>
+          <h3>Note Taker</h3>
         </div>
         <div className="item">
           <img src="assets/logo_used_50.png" alt="" />
-          <h3>CloutMediaApp</h3>
+          <h3>Weather Dashboard</h3>
         </div>
       </div>
     </div>
