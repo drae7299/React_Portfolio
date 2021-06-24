@@ -12,6 +12,11 @@
     position: absolute;
     cursor: pointer;
 
+
+    @include mobile{
+      display: none;
+   }
+
     &.left {
       left: 300px;
       color: $mainColor;
@@ -53,6 +58,16 @@
         justify-content: center;
         border: 3px solid $mainColor;
 
+        @include mobile{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 330px;
+          height: 330px;
+          margin:  20px 10px;
+  
+       }
+
         .left {
           flex: 4;
           height: 80%;
@@ -82,10 +97,20 @@
             }
             h2 {
               font-size: 30px;
+
+              @include mobile{
+                font-size: 20px;
+          
+            }
             }
 
             p {
               font-size: 20px;
+
+              @include mobile{
+                font-size: 18px;
+          
+            }
             }
 
             span {
@@ -93,6 +118,11 @@
               font-weight: bold;
               text-decoration: underline;
               cursor: pointer;
+
+              @include mobile{
+                font-size: 15px;
+          
+            }
             }
           }
         }
