@@ -5,7 +5,38 @@ import NavigateNextOutlinedIcon from '@material-ui/icons/NavigateNextOutlined';
 export default function Works() {
 
     const data =[
-        
+        { 
+            id: 1, 
+            title: "Featured", 
+            img: "assets/logo_used_50.png",
+            icon:"",
+         },
+         {
+            id: 2,
+            title: "Fitness Tracker",
+            img: "assets/fitnessTracker.png",
+          },
+          {
+            id: 3,
+            title: "Budget Tracker",
+            img: "assets/budgetApp.png",
+          },
+          {
+            id: 4,
+            title: "Tune Tips",
+            img: "assets/tipsShot.png",
+          },
+          {
+            id: 5,
+            title: "Note Taker",
+            img: "assets/noteTaker.png",
+          },
+          {
+            id: 6,
+            title: "Weather Dashboard",
+            img: "assets/weatherDash.png",
+          },
+
     ]
   return (
     <div className="works" id="works">

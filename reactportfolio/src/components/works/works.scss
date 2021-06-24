@@ -16,7 +16,7 @@
       &.left{
           left: 300px;
           color: $mainColor;
-          animation: arrowBlink 1.5s infinite;
+          animation: arrowBlink .5s infinite;
           @keyframes arrowBlink {
             100%{
             opacity: 0;
@@ -27,7 +27,7 @@
       &.right{
           right: 300px;
           color: $mainColor;
-          animation: arrowBlink 1.5s infinite;
+          animation: arrowBlink .5s infinite;
           @keyframes arrowBlink {
             100%{
             opacity: 0;
