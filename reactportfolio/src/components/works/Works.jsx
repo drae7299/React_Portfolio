@@ -3,7 +3,8 @@ import TouchAppIcon from '@material-ui/icons/TouchApp';
 import NavigateBeforeOutlinedIcon from '@material-ui/icons/NavigateBeforeOutlined';
 import NavigateNextOutlinedIcon from '@material-ui/icons/NavigateNextOutlined';
 import { useState, useEffect } from "react";
-import { current } from "immer/dist/internal";
+
+
 export default function Works() {
 const [currentSlide, setCurrentSlide] = useState(0)
 
@@ -12,7 +13,7 @@ const [currentSlide, setCurrentSlide] = useState(0)
             id: 1, 
             title: "Featured", 
             img: "assets/logo_used_50.png",
-            icon:"",
+            icon:"", 
             desc:"",
 
          },
@@ -58,20 +59,20 @@ const [currentSlide, setCurrentSlide] = useState(0)
 
     const handleClick = (way) =>{
         way === "left" 
-        ? setCurrentSlide(currentSlide > 0 ? currentSlide -1 : 2) 
-        : setCurrentSlide(currentSlide < data.length -1 ? currentSlide + 1 : 0);
+        ? setCurrentSlide(currentSlide > 0 ? currentSlide-1 : 2) 
+        : setCurrentSlide(currentSlide < data.length-1 ? currentSlide+1 : 0);
     }
 
   return (
     <div className="works" id="works">
-      <div className="slider" style={{transform:`translateX(-${currentSlide *100} vw)`}}>
-      {data.map(d=>(
+      <div className="slider" style={{transform: `translateX(-${currentSlide * 100}vw)` }}>
+      {data.map((d)=> (
         <div className="container">
           <div className="item">
             <div className="left">
               <div className="leftContainer">
                 <div className="imgContainer">
-                  <TouchAppIcon fontSize="large" alt=""/>
+                  <img src={d.img} alt=""/>
                 </div>
                 <h2>{d.title}</h2>
                 <p>{d.desc}</p>
@@ -79,11 +80,10 @@ const [currentSlide, setCurrentSlide] = useState(0)
               </div>
             </div>
             <div className="right">
-                <img src="assets/logo_used_50.png" alt=""/>
+                <img src={d.img} alt=""/>
             </div>
           </div>
-        </div>
-        ))}
+        </div>))}
       </div>
     <NavigateBeforeOutlinedIcon fontSize="large"className="arrow left" alt="" onClick={()=>handleClick("left")}/>
     <NavigateNextOutlinedIcon fontSize="large"className="arrow right" alt="" onClick={()=>handleClick("right")}/>
