@@ -22,6 +22,7 @@
       justify-content: center;
       float: right;
       padding-right: 30px;
+      border-style: 3px solid color $mainColor;
 
       @include mobile {
         align-items: flex-start;
@@ -29,9 +30,11 @@
 
       .img {
         height: 280px;
+        border-style: 3px solid color $mainColor;
 
         @include mobile {
           height: 35%;
+          border-style: 3px solid color $mainColor;
         }
       }
     }

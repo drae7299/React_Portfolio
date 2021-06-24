@@ -69,10 +69,10 @@
 
         @include mobile {
           width: 90%;
-          height: 120px;
+          height: 84px;
           overflow: hidden;
-          margin-top: 20px;
-          margin: 6 20px;
+          margin-top: 5px;
+          margin: 3 25px;
         }
 
         .left {
@@ -93,21 +93,22 @@
             justify-content: space-between;
 
             .imgContainer {
-              width: 55px;
-              height: 55px;
+              width: 75px;
+              height: 75px;
               border-radius: 50%;
               background-color: lightslategray;
               display: flex;
               align-items: center;
               justify-content: center;
+             
 
               @include mobile {
-                width: 20px;
-                height: 20px;
+               display: none;
               }
 
               .img {
                 width: 35px;
+                
               }
             }
             h2 {
@@ -159,11 +160,11 @@
             box-shadow: 20px 20px 20px;
             border-radius: 10px 10px 10px;
 
-            // @include mobile {
-            //   width: 200px;
-            //   height: 160px;
-
-            //   }
+            @include mobile {
+              transform: rotate(-10deg);
+              height: 70px;
+              width: 70px;
+              }
           }
         }
       }
