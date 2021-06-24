@@ -5,7 +5,9 @@ import { useEffect, useState } from "react";
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
   const list = [
-    { id: "featured", title: "Featured" },
+    { id: "featured", 
+    title: "Featured", 
+    },
     {
       id: "fitness tracker",
       title: "Fitness Tracker",
