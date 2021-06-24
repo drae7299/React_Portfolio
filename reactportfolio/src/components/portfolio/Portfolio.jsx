@@ -1,9 +1,11 @@
 import "./portfolio.scss";
 import PortfolioList from "../portfolioList/PortfolioList";
 import { useEffect, useState } from "react";
+import { featuredPortfolio, featuredFitness, featuredBudget, featuredTune, featuredNote, featuredWeather } from "../../../data";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
+  const [data, setData] = useState([]);
   const list = [
     { id: "featured", 
     title: "Featured", 
@@ -29,6 +31,33 @@ export default function Portfolio() {
       title: "Weather Dashboard",
     },
   ];
+
+  useEffect(() => {
+
+      switch (selected){
+        case "featured":
+            setData(featuredPortfolio);
+            break;
+            case "fitness tracker":
+            setData(featuredFitness);
+            break;
+            case "budget tracker":
+            setData(featuredBudget);
+            break;
+            case "tune tips":
+            setData(featuredTune);
+            break;
+            case "note taker":
+            setData(featuredNote);
+            break;
+            case "weather dashboard":
+            setData(featuredWeather);
+            break;
+            default:
+              setData(featuredPortfolio);
+      }
+
+  }, [selected])
   return (
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
@@ -47,27 +76,7 @@ export default function Portfolio() {
           <img src="assets/logo_used_50.png" alt="" />
           <h3>CloutMediaApp</h3>
         </div>
-        <div className="item">
-          <img src="assets/logo_used_50.png" alt="" />
-          <h3>Fitness Tracker</h3>
-        </div>
-        <div className="item">
-          <img src="assets/logo_used_50.png" alt="" />
-          <h3>Budget Tracker</h3>
-        </div>
-        <div className="item">
-          <img src="assets/logo_used_50.png" alt="" />
-          <h3>Tune Tips</h3>
-        </div>
-        <div className="item">
-          <img src="assets/logo_used_50.png" alt="" />
-          <h3>Note Taker</h3>
-        </div>
-        <div className="item">
-          <img src="assets/logo_used_50.png" alt="" />
-          <h3>Weather Dashboard</h3>
-        </div>
-      </div>
+    </div>
     </div>
   );
 }
