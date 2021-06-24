@@ -1,15 +1,20 @@
 import "./portfolio.scss";
 import PortfolioList from "../portfolioList/PortfolioList";
 import { useEffect, useState } from "react";
-import { featuredPortfolio, featuredFitness, featuredBudget, featuredTune, featuredNote, featuredWeather } from "../../data";
+import {
+  featuredPortfolio,
+  featuredFitness,
+  featuredBudget,
+  featuredTune,
+  featuredNote,
+  featuredWeather,
+} from "../../data";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
   const list = [
-    { id: "featured", 
-    title: "Featured", 
-    },
+    { id: "featured", title: "Featured" },
     {
       id: "fitness tracker",
       title: "Fitness Tracker",
@@ -33,31 +38,29 @@ export default function Portfolio() {
   ];
 
   useEffect(() => {
-
-      switch (selected){
-        case "featured":
-            setData(featuredPortfolio);
-            break;
-            case "fitness tracker":
-            setData(featuredFitness);
-            break;
-            case "budget tracker":
-            setData(featuredBudget);
-            break;
-            case "tune tips":
-            setData(featuredTune);
-            break;
-            case "note taker":
-            setData(featuredNote);
-            break;
-            case "weather dashboard":
-            setData(featuredWeather);
-            break;
-            default:
-              setData(featuredPortfolio);
-      }
-
-  }, [selected])
+    switch (selected) {
+      case "featured":
+        setData(featuredPortfolio);
+        break;
+      case "fitness tracker":
+        setData(featuredFitness);
+        break;
+      case "budget tracker":
+        setData(featuredBudget);
+        break;
+      case "tune tips":
+        setData(featuredTune);
+        break;
+      case "note taker":
+        setData(featuredNote);
+        break;
+      case "weather dashboard":
+        setData(featuredWeather);
+        break;
+      default:
+        setData(featuredPortfolio);
+    }
+  }, [selected]);
   return (
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
@@ -72,14 +75,13 @@ export default function Portfolio() {
         ))}
       </ul>
       <div className="container">
-      {data.map(d=> (
-
-        <div className="item">
-          <img src={d.img} alt="" />
-          <h3>{d.title}</h3>
-        </div>
+        {data.map((d) => (
+          <div className="item">
+            <img src={d.img} alt="" />
+            <h3>{d.title}</h3>
+          </div>
         ))}
-    </div>
+      </div>
     </div>
   );
 }
