@@ -10,15 +10,14 @@
   z-index: 3;
   transition: all 2s ease;
 
-
-  @include mobile{
+  @include mobile {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50px;
     overflow: hidden;
-    font-size: 15px ;
-}
+    font-size: 15px;
+  }
 
   &::-webkit-scrollbar {
     display: none;
@@ -41,13 +40,12 @@
         color: inherit;
         margin-right: 40px;
 
-
-        @include mobile{
-         display: flex;
-         align-items:flex-start;
-         justify-content: flex-start;
-         font-size: 25px;
-      }
+        @include mobile {
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+          font-size: 25px;
+        }
       }
     }
 
@@ -56,9 +54,9 @@
       align-items: center;
       margin-left: 30px;
 
-      @include mobile{
+      @include mobile {
         display: none;
-    }
+      }
 
       .icon {
         font-size: 18px;
