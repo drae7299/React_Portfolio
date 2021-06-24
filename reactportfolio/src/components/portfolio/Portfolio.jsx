@@ -1,7 +1,7 @@
 import "./portfolio.scss";
 import PortfolioList from "../portfolioList/PortfolioList";
 import { useEffect, useState } from "react";
-import { featuredPortfolio, featuredFitness, featuredBudget, featuredTune, featuredNote, featuredWeather } from "../../../data";
+import { featuredPortfolio, featuredFitness, featuredBudget, featuredTune, featuredNote, featuredWeather } from "../../data";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
@@ -72,10 +72,13 @@ export default function Portfolio() {
         ))}
       </ul>
       <div className="container">
+      {data.map(d=> (
+
         <div className="item">
-          <img src="assets/logo_used_50.png" alt="" />
-          <h3>CloutMediaApp</h3>
+          <img src={d.img} alt="" />
+          <h3>{d.title}</h3>
         </div>
+        ))}
     </div>
     </div>
   );

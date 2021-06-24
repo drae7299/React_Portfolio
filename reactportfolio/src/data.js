@@ -1,6 +1,7 @@
 export const featuredPortfolio = [
     { id: "featured", 
     title: "Featured", 
+    img: "assets/logo_used_50.png"
     }
 ]
 
