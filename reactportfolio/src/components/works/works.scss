@@ -7,42 +7,40 @@
   justify-content: center;
   position: relative;
 
+  .arrow {
+    height: 110px;
+    position: absolute;
+    cursor: pointer;
 
-  .arrow{
-      height: 110px;
-      position: absolute;
-      cursor: pointer;
-
-      &.left{
-          left: 300px;
-          color: $mainColor;
-          animation: arrowBlink .5s infinite;
-          @keyframes arrowBlink {
-            100%{
-            opacity: 0;
-            }
+    &.left {
+      left: 300px;
+      color: $mainColor;
+      animation: arrowBlink 0.5s infinite;
+      @keyframes arrowBlink {
+        100% {
+          opacity: 0;
         }
       }
+    }
 
-      &.right{
-          right: 300px;
-          color: $mainColor;
-          animation: arrowBlink .5s infinite;
-          @keyframes arrowBlink {
-            100%{
-            opacity: 0;
-            }
+    &.right {
+      right: 300px;
+      color: $mainColor;
+      animation: arrowBlink 0.5s infinite;
+      @keyframes arrowBlink {
+        100% {
+          opacity: 0;
         }
       }
-  } 
-  
+    }
+  }
 
   .slider {
     height: 500px;
     display: flex;
     position: absolute;
-    left: -100vw;
-   
+    left: 0;
+    transition: all 1s ease-in-out;
 
     .container {
       width: 100vw;
@@ -112,10 +110,12 @@
           align-items: center;
           justify-content: center;
           overflow: hidden;
-          img{
-              width: 500px;
-              height: 100%;
-              transform: rotate(-10deg);
+          img {
+            width: 500px;
+            height: 300px;
+            transform: rotate(-10deg);
+            box-shadow: 20px 20px 20px;
+            border-radius: 10px 10px 10px;
           }
         }
       }
