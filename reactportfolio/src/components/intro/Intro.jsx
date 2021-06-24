@@ -29,7 +29,7 @@ export default function Intro() {
                 <h3>Aspiring <span ref={textRef}></span></h3>
             </div>
             <a href= "#portfolio">
-            <KeyboardArrowDownIcon className="downIcon"/>
+            <KeyboardArrowDownIcon fontSize="large" className="downIcon"/>
             </a>
         </div>
         </div>

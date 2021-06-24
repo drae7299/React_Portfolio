@@ -1,89 +1,124 @@
+@import "../../global.scss";
+
 .works {
-    background-color: rgb(141, 141, 141);
-    display: flex;
-    align-items: center;    
-    justify-content: center;
+  background-color: rgb(141, 141, 141);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 
 
-    .slider{
-        height: 500px;
-        display: flex;
-        position: absolute;
-        left: 0;
+  .arrow{
+      height: 70px;
+      position: absolute;
+      cursor: pointer;
 
-        .container{
-            width: 100vw;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            .item{
-                width: 1000px;
-                height: 100%;
-                background-color: white;
-                border-radius: 20px;  
-                display: flex;
-                align-items: center;
-                justify-content: center;
-             
-
-
-                .left{
-                    flex: 4;
-                    height: 80%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    
-
-                    .leftContainer{
-                        width: 90%;
-                        height: 90%;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-
-                        .imgContainer{
-                            width: 145px;
-                            height: 145px;
-                            border-radius: 50%;
-                            background-color: lightslategray;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-
-                            .img{
-                                width: 25px;
-                            }
-                        }
-                        h2{
-                            font-size: 20px;
-
-                        }
-
-                        p{
-                            font-size: 13px;
-                        }
-
-                        span{
-                            font-size: 12px;
-                            font-weight: bold;
-                            text-decoration: underline;
-                            cursor: pointer;
-                        }
-                    }
-                }
-
-                .right{
-                    flex: 8;
-                    height: 80%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                }
+      &.left{
+          left: 300px;
+          color: $mainColor;
+          animation: arrowBlink 1.5s infinite;
+          @keyframes arrowBlink {
+            100%{
+            opacity: 0;
             }
         }
-    }
+      }
 
+      &.right{
+          right: 300px;
+          color: $mainColor;
+          animation: arrowBlink 1.5s infinite;
+          @keyframes arrowBlink {
+            100%{
+            opacity: 0;
+            }
+        }
+      }
+  } 
+  
+
+  .slider {
+    height: 500px;
+    display: flex;
+    position: absolute;
+    left: 0;
+   
+
+    .container {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+      .item {
+        width: 980px;
+        height: 100%;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid $mainColor;
+
+        .left {
+          flex: 4;
+          height: 80%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .leftContainer {
+            width: 90%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .imgContainer {
+              width: 55px;
+              height: 55px;
+              border-radius: 50%;
+              background-color: lightslategray;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              .img {
+                width: 25px;
+              }
+            }
+            h2 {
+              font-size: 30px;
+            }
+
+            p {
+              font-size: 20px;
+            }
+
+            span {
+              font-size: 18px;
+              font-weight: bold;
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .right {
+          flex: 8;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          img{
+              width: 500px;
+              height: 100%;
+              transform: rotate(-10deg);
+          }
+        }
+      }
+    }
+  }
 }
