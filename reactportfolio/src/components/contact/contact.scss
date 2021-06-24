@@ -1,3 +1,71 @@
+@import "../../global.scss";
+
 .contact{
     background-color: white;
+    display: flex;
+
+
+    .left{
+        flex: 1;
+        overflow: hidden;
+
+        img{
+            height: 90%;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+     }
+
+
+
+
+    .right{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2{
+            font-size:  50px;
+        }
+
+        form{
+            width: 70%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            input{
+                width: 300px;
+                height: 50px;
+                font-size: 20px;
+            }
+
+            textarea{
+                width: 300px;
+                height: 200px;
+                font-size: 20px;
+            }
+
+            button{
+                width: 150px;
+                height: 30px;
+                color: white;
+                background-color: $mainColor;
+                border: none;
+                border-radius: 10px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+
+            span{
+                color: rgb(64, 190, 64);
+                font-weight: 500;
+                font-size: 20px;
+            }
+        }
+    }
 }

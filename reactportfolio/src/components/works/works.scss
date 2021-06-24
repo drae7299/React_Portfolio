@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .works {
-  background-color: rgb(141, 141, 141);
+  background-color: rgb(148, 148, 148);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,12 +15,6 @@
     &.left {
       left: 300px;
       color: $mainColor;
-      animation: arrowBlink 0.5s infinite;
-      @keyframes arrowBlink {
-        100% {
-          opacity: 0;
-        }
-      }
     }
 
     &.right {
@@ -110,9 +104,10 @@
           align-items: center;
           justify-content: center;
           overflow: hidden;
+          background-color: linen;
           img {
-            width: 500px;
-            height: 300px;
+            width: 400px;
+            height: 280px;
             transform: rotate(-10deg);
             box-shadow: 20px 20px 20px;
             border-radius: 10px 10px 10px;
