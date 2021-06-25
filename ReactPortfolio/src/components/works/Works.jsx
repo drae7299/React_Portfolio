@@ -45,7 +45,7 @@ export default function Works() {
     {
       id: 6,
       title: "Weather Dashboard",
-      img: "assets/weatherDash.png",
+      img: "assets/weatherDashBoard.png",
       target: "",
       desc: "",
     },
