@@ -12,12 +12,10 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
     "sass": "^1.35.1",
-    "web-vitals": "^1.0.1",
-    "webpack-dev-server": "^3.11.2"
+    "web-vitals": "^1.0.1"
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
