@@ -18,7 +18,7 @@ export default function Works() {
       id: 2,
       title: "Fitness Tracker",
       img: "assets/fitnessTracker.png",
-      target: "",
+      target: "https://fitness-tracker5001.herokuapp.com/",
       desc: "This Fitness Tracker allows you to log and even update/complete workouts! ",
     },
     {

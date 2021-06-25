@@ -39,6 +39,6 @@ export const featuredWeather = [
   {
     id: "weather dashboard",
     title: "Weather Dashboard",
-    img: "assets/weatherDash.png",
+    img: "assets/weatherDashBoard.png",
   },
 ];
