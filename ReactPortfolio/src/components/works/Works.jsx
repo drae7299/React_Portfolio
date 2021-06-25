@@ -1,5 +1,4 @@
 import "./works.scss";
-import TouchAppIcon from "@material-ui/icons/TouchApp";
 import NavigateBeforeOutlinedIcon from "@material-ui/icons/NavigateBeforeOutlined";
 import NavigateNextOutlinedIcon from "@material-ui/icons/NavigateNextOutlined";
 import { useState, useEffect } from "react";
@@ -62,10 +61,8 @@ export default function Works() {
     <div className="works" id="works">
       <div
         className="slider"
-        style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
-      >
+        style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
         {data.map((d) => (
-          <a target="_blank" href={d.url}>
           <div className="container">
             <div className="item">
               <div className="left">
@@ -83,7 +80,6 @@ export default function Works() {
               </div>
             </div>
           </div>
-          </a>
         ))}
       </div>
       <NavigateBeforeOutlinedIcon

@@ -3,12 +3,14 @@ import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
 
+
+
 export default function Intro() {
   const textRef = useRef();
   useEffect(() => {
     init(textRef.current, {
       strings: [
-        " React Developer",
+        "React Developer",
         "UI/UX Designer",
         "Software Developer",
         "Front End Developer",
@@ -24,7 +26,7 @@ export default function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="./assets/Andre_Headshot_Shot3_1_25.png" alt="" className="me" />
+          <img src="/assets/headshot.png" alt=""/>
         </div>
       </div>
       <div className="right">

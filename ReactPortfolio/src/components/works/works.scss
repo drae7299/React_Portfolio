@@ -39,6 +39,7 @@
     position: absolute;
     left: 0;
     transition: all 1s ease-in-out;
+    overflow: hidden;
 
     @include mobile {
       height: 90vh;
@@ -66,6 +67,7 @@
         align-items: center;
         justify-content: center;
         border: 3px solid $mainColor;
+        overflow: hidden;
 
         @include mobile {
           width: 90%;
@@ -149,6 +151,7 @@
           justify-content: center;
           overflow: hidden;
           background-color: linen;
+          overflow: hidden;
 
           @include mobile {
             flex: 8;
@@ -159,6 +162,7 @@
             transform: rotate(-10deg);
             box-shadow: 20px 20px 20px;
             border-radius: 10px 10px 10px;
+            overflow: hidden;
 
             @include mobile {
               transform: rotate(-10deg);
