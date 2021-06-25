@@ -84,6 +84,10 @@
           background-color: $mainColor;
           transform-origin: left;
           transition: all 1s ease;
+
+          &.active{
+            color: white;
+          }
         }
       }
     }
@@ -92,6 +96,7 @@
   &.active {
     background-color: $mainColor;
     color: white;
+    opacity: .7;
 
     .hamburger {
       span {
