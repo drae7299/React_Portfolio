@@ -12,7 +12,7 @@ export default function Works() {
       title: "Featured",
       img: "assets/logo_used_50.png",
       target: "",
-      desc: "Clout Media app is a place where like minded Artists and Engimeers can meet to colaborate! ",
+      desc: "Clout Media app is a place where like minded Artists and Engineers can meet to colaborate! ",
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ export default function Works() {
       title: "Tune Tips",
       img: "assets/tipsShot.png",
       url: "https://roy-sizemore.github.io/tune-tips/",
-      desc: "",
+      desc: "Have you ever wanted to know more about your favorite artists and maybe even a small bio? Look no futher as Tune Tips will get the job done with a few taps or key strokes!",
     },
     {
       id: 5,
@@ -47,7 +47,7 @@ export default function Works() {
       title: "Weather Dashboard",
       img: "assets/weatherDashBoard.png",
       target: "https://drae7299.github.io/Weather_Dashboard_API/",
-      desc: "Use this handy app to get a 5 day forcast in your city or any for that fact! UV index will be included as well for your searches",
+      desc: "Use this handy app to get a 5 day forcast in your city or any for that fact! UV index will be included as well for your searches!",
     },
   ];
 
