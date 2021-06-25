@@ -12,42 +12,42 @@ export default function Works() {
       id: 1,
       title: "Featured",
       img: "assets/logo_used_50.png",
-      icon: "",
-      desc: "",
+      target: "",
+      desc: "Clout Media app is a place where like minded Artists and Engimeers can meet to colaborate! ",
     },
     {
       id: 2,
       title: "Fitness Tracker",
       img: "assets/fitnessTracker.png",
-      icon: "",
-      desc: "",
+      target: "",
+      desc: "This Fitness Tracker allows you to log and even update/complete workouts! ",
     },
     {
       id: 3,
       title: "Budget Tracker",
       img: "assets/budgetApp.png",
-      icon: "",
-      desc: "",
+      target: "",
+      desc: "Got a tight budget? Go ahead and try this out to keep your finances in line!",
     },
     {
       id: 4,
       title: "Tune Tips",
       img: "assets/tipsShot.png",
-      icon: "",
+      url: "https://roy-sizemore.github.io/tune-tips/",
       desc: "",
     },
     {
       id: 5,
       title: "Note Taker",
       img: "assets/noteTaker.png",
-      icon: "",
+      target: "",
       desc: "",
     },
     {
       id: 6,
       title: "Weather Dashboard",
       img: "assets/weatherDash.png",
-      icon: "",
+      target: "",
       desc: "",
     },
   ];
@@ -65,6 +65,7 @@ export default function Works() {
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
         {data.map((d) => (
+          <a target="_blank" href={d.url}>
           <div className="container">
             <div className="item">
               <div className="left">
@@ -82,6 +83,7 @@ export default function Works() {
               </div>
             </div>
           </div>
+          </a>
         ))}
       </div>
       <NavigateBeforeOutlinedIcon

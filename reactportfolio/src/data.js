@@ -23,6 +23,7 @@ export const featuredTune = [
     id: "tune tips",
     title: "Tune Tips",
     img: "assets/tipsShot.png",
+    url:"https://roy-sizemore.github.io/tune-tips/"
   },
 ];
 
