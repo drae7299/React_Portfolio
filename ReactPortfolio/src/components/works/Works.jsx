@@ -25,7 +25,7 @@ export default function Works() {
       id: 3,
       title: "Budget Tracker",
       img: "assets/budgetApp.png",
-      target: "",
+      target: "https://budgetpwa2021.herokuapp.com/",
       desc: "Got a tight budget? Go ahead and try this out to keep your finances in line!",
     },
     {
@@ -39,15 +39,15 @@ export default function Works() {
       id: 5,
       title: "Note Taker",
       img: "assets/noteTaker.png",
-      target: "",
-      desc: "",
+      target: "https://gentle-crag-05153.herokuapp.com/",
+      desc: "Use this app to jot down notes and even save them on your local storage to revisit and even remove at a later time!",
     },
     {
       id: 6,
       title: "Weather Dashboard",
       img: "assets/weatherDashBoard.png",
-      target: "",
-      desc: "",
+      target: "https://drae7299.github.io/Weather_Dashboard_API/",
+      desc: "Use this handy app to get a 5 day forcast in your city or any for that fact! UV index will be included as well for your searches",
     },
   ];
 
@@ -82,6 +82,7 @@ export default function Works() {
           </div>
         ))}
       </div>
+      
       <NavigateBeforeOutlinedIcon
         fontSize="large"
         className="arrow left"
