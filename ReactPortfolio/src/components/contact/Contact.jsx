@@ -33,8 +33,8 @@ export default function Contact() {
          </ul>
          <ul className="contactInfo">
          <PictureAsPdfIcon fontSize="large"/>
-         <a href="Assets\Andre_Rodriguez_-_Full_Stack_Web_and_Application_Developer (1).pdf"
-                    target="Assets\Andre_Rodriguez_-_Full_Stack_Web_and_Application_Developer (1).pdf">Resume</a>
+         <a href="assets/Andre_Rodriguez_-_Full_Stack_Web_and_Application_Developer (1).pdf"
+                    target="assets/Andre_Rodriguez_-_Full_Stack_Web_and_Application_Developer (1).pdf">Resume</a>
          </ul>
           
 
