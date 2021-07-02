@@ -47,4 +47,4 @@ Email: drae7299@gmail.com
 
 ## Links
 
-https://shielded-mountain-27337.herokuapp.com/
+https://drae7299.github.io/React_Portfolio/
